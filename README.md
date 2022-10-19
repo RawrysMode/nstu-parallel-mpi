@@ -5,12 +5,12 @@
 
 ## Сборка последовательного решения
 ```bash
-g++ var59_simple.cpp -std=c++11 -o start_simple
+g++ simple.cpp -std=c++11 -o start_simple
 ./start_simple <N>
 ```
 
 ## Сборка параллельного решения
 ```bash
-mpicxx var59_MPI.cpp -std=c++11 -o start_mpi 
+mpicxx mpi.cpp -std=c++11 -o start_mpi 
 mpirun -n 5 ./start_mpi <N>
 ```
